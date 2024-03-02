@@ -1,0 +1,50 @@
+*{
+  background: #f2f5a9;
+  padding: 0;
+  margin: 1;
+}
+header,nav,footer, #contenedor {width: 100%}
+
+body {height: 100vh;}
+
+header, footer{
+  height: 7%;
+  border: 3px solid;
+}
+footer{
+  background: #e2a9f3;
+}
+header{
+  background: #86b404;
+  margin-bottom: 10px;
+}
+
+
+nav {
+  height: 7%;
+  background: #86b404;
+  border: 3px solid;
+  margin-bottom: 10px;
+}
+#contenedor
+{
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #f2f5a9;
+  border: 3px solid;
+
+}
+#contenedor article {
+  width: 20%;
+  background: #04b4ae;
+  border: 3px solid;
+  height: 80%;
+}
+#contenedor section {
+  height: 80%;
+  background: #f4fa58;
+  width: 55%;
+  border: 3px solid;
+}
