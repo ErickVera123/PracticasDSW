@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 16</title>
+    <link rel="stylesheet" href="practica16.css">
+</head>
+<body>
+    <h1>Campamento juvenil 2024</h1>
+    <h2>Inscripción</h2>
+    <form id="formulario">
+    <table>
+      <tr>
+        <td>Nombres:</td>
+        <td>Apellidos:</td>
+      </tr>
+      <tr>
+        <td><input type="text" name="nombre" class="mayusculas" onkeypress="return texto" required /></td>
+        <td><input type="text" name="apellido" class="mayusculas" onkeypress="return texto"required/></td>
+      </tr>
+
+      <tr>
+        <td>Edad:</td>
+        <td>Sexo:</td>
+      </tr>
+      <tr>
+        <td><input type="number" name="edad"required/></td>
+        <td>
+          <select name="sexo" required>
+            <option value="FEMENINO">FEMENINO</option>
+            <option value="MASCULINO">MASCULINO</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Ciudad:</td>
+        <td>Otro:</td>
+      </tr>
+      <tr>
+        <td>
+          <select id="ciudad" name="ciudad" onchange="habilitar()" required>
+            <option value="ENSENADA">ENSENADA</option>
+            <option value="TIJUANA">TIJUANA</option>
+            <option value="MEXICALI">MEXICALI</option>
+            <option value="ROSARITO">ROSARITO</option>
+            <option value="TECATE">TECATE</option>
+            <option value="SAN FELIPE">SAN FELIPE</option>
+            <option value="OTRO">OTRO</option>
+          </select>
+        </td>
+        <td><input type="text" class="mayusculas" name="otro" required/></td>
+      </tr>
+
+      <tr>
+        <td>Otro:</td>
+        <td>Celular: (10 digitos)</td>
+      </tr>
+      <tr>
+        <td>
+          <select name="Otro" required>
+            <option value="NO">NO</option>
+            <option value="SI">SI</option>
+          </select>
+        </td>
+        <td><input type="tel" name="celular"/></td>
+      </tr>
+
+      <tr>
+        <td>Transporte:</td>
+        <td>Comentarios:</td>
+      </tr>
+      <tr>
+        <td>
+          <select id="transporte" name="transporte" disabled required>
+            <option value="NO">NO</option>
+            <option value="SI">SI</option>
+          </select>
+        </td>
+        <td rowspan="3">
+          <textarea name="name" rows="6" cols="22"></textarea required>
+        </td>
+      </tr>
+      <tr>
+        <td>Camisa:</td>
+      </tr>
+      <tr>
+        <td>
+          <select id="camisa" name="camisa" onchange="aparecer()" required>
+
+            <option value="NO">NO</option>
+            <option value="SI">SI</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr class="ocultar">
+        <td>Talla:</td>
+      </tr>
+      <tr class="ocultar">
+        <td>
+          <select name="talla" required>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" name="enviar" class="boton" value="Enviar"></td>
+      </tr>
+    </table>
+    </form>
+
+  </body>
+</html>

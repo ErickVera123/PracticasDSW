@@ -1,0 +1,33 @@
+body
+{
+background-image: url("campamento.png");
+background-attachment: fixed;
+}
+table
+{
+  margin: auto;
+}
+h1,h2
+{
+text-align: center;
+text-shadow: 2px 2px #94F9FF;
+}
+.boton
+{
+width:350px;
+
+
+}
+.ocultar
+{
+  display: none;
+}
+form
+{
+  background: #33C7FF;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: auto;
+  height: 400px;
+  width: 620px;
+}
