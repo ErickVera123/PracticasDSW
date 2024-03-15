@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 21</title>
+    <script src="Practica21.js" defer></script>
+</head>
+<body>
+    <h2>Calculadora de peso en otros planetas</h2>
+    <form id="formulario">
+        <label for="peso">Peso en la Tierra (kg):</label>
+        <input type="number" id="peso" name="peso" required><br><br>
+
+        <label for="planeta">Selecciona un planeta:</label>
+        <select id="planeta" name="planeta">
+            <option value="1">Marte</option>
+            <option value="2">Júpiter</option>
+        </select><br><br>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    <div id="resultado"></div>
+</body>
+</html>
