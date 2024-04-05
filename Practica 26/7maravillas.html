@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="7maravillas.css">
+    <title>7 MARAVILLAS DEL MUNDO</title>
+    <script src="7maravillas.js"></script>
+</head>
+<body>
+    <header>7 MARAVILLAS DEL MUNDO</header>
+    <h1>¿Qué Maravilla del mundo es?</h1>
+
+    <!-- Pantalla inicial -->
+    <div id="pantalla-inicial">
+        <!-- Contenedor del mensaje de bienvenida y el botón de juego -->
+        <p>¿A qué maravilla pertenece la imagen?</p>
+        <button class="btn" onclick="comenzarJuego()">JUGAR</button>
+    </div>
+
+    <!-- Pantalla juego -->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <!-- Contenedor de la imagen de la maravilla y las opciones -->
+        <img src="" alt="" id="imgMaravilla">
+        <div class="opciones">
+            <!-- Opción A -->
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <div class="letra" id="l0">A</div>
+                <div class="nombre" id="n0">OPCION A</div>
+            </div>
+            <!-- Opción B -->
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">OPCION B</div>
+            </div>
+            <!-- Opción C -->
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">OPCION C</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Pantalla final -->
+    <div id="pantalla-final">
+        <!-- Contenedor de los resultados -->
+        <h2>RESULTADOS</h2>
+        <div>
+            <!-- Resultado de respuestas correctas -->
+            <p>Respuestas correctas: <span id="numCorrectas">0</span></p>
+            <!-- Resultado de respuestas incorrectas -->
+            <p>Respuestas incorrectas: <span id="numIncorrectas">0</span></p>
+        </div>
+        <!-- Botón para volver al inicio -->
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+    </div>
+</body>
+</html>
