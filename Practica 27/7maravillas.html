@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="7maravillas.css">
+    <title>7 MARAVILLAS DEL MUNDO</title>
+    <script src="7maravillas.js"></script>
+    <script src="frutas.js"></script>
+</head>
+<body>
+    <header>Adivina adivinador</header>
+    <h1>Juega a adivinar</h1>
+
+    <!-- Pantalla inicial -->
+    <div id="pantalla-inicial">
+        <!-- Contenedor del mensaje de bienvenida y los botones de juego -->
+        <p id="selecciona">Selecciona el tipo de juego</p>
+        <button class="btn" onclick="comenzarJuego()">Adivina las 7 maravillas del mundo</button><br><br><br>
+        <button class="btn" onclick="comenzarJuegoFrutas()">Adivina las frutas</button>
+    </div>
+
+    <!-- Pantalla de juego de las 7 maravillas -->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <!-- Contenedor de la imagen de la maravilla y las opciones -->
+        <img src="" alt="" id="imgMaravilla">
+        <div class="opciones">
+            <!-- Opción A -->
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <div class="letra" id="l0">A</div>
+                <div class="nombre" id="n0">OPCION A</div>
+            </div>
+            <!-- Opción B -->
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">OPCION B</div>
+            </div>
+            <!-- Opción C -->
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">OPCION C</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Pantalla de juego de las frutas -->
+<div class="pantalla-juego1" id="pantalla-juego1">
+    <!-- Contenedor de la imagen de la fruta y las opciones -->
+    <img src="" alt="" id="imgfruta">
+    <div class="opciones1">
+        <!-- Opción A -->
+        <div class="opcion1" id="op0f" onclick="comprobarRespuestaFrutas(0)">
+            <div class="letra" id="l0f">A</div>
+            <div class="nombre" id="n0f">OPCION A</div>
+        </div>
+        <!-- Opción B -->
+        <div class="opcion1" id="op1f" onclick="comprobarRespuestaFrutas(1)">
+            <div class="letra" id="l1f">B</div>
+            <div class="nombre" id="n1f">OPCION B</div>
+        </div>
+        <!-- Opción C -->
+        <div class="opcion1" id="op2f" onclick="comprobarRespuestaFrutas(2)">
+            <div class="letra" id="l2f">C</div>
+            <div class="nombre" id="n2f">OPCION C</div>
+        </div>
+        <!-- Opción D -->
+        <div class="opcion1" id="op3f" onclick="comprobarRespuestaFrutas(3)">
+            <div class="letra" id="l3f">D</div>
+            <div class="nombre" id="n3f">OPCION D</div>
+        </div>
+    </div>
+</div>
+
+    <!-- Pantalla final -->
+    <div id="pantalla-final">
+        <!-- Contenedor de los resultados -->
+        <h2>RESULTADOS</h2>
+        <div>
+            <!-- Resultado de respuestas correctas -->
+            <p>Respuestas correctas: <span id="numCorrectas">0</span></p>
+            <!-- Resultado de respuestas incorrectas -->
+            <p>Respuestas incorrectas: <span id="numIncorrectas">0</span></p>
+        </div>
+        <!-- Botón para volver al inicio -->
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+    </div>
+</body>
+</html>
