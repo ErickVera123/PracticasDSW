@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 30</title>
+    <link rel="stylesheet" href="practica30.css">
+    <script src="practica30.js" defer></script>
+</head>
+<body>
+    <h1>Tour Vacacional</h1>
+    <h2>Registro</h2>
+    <form id="formulario">
+        <table>
+            <tr>
+                <td>Nombres:</td>
+                <td>Apellidos:</td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Nombre" name="nombre" id="nombre" style="text-transform:uppercase" /></td>
+                <td><input type="text" placeholder="Apellido" name="apellido" id="apellido" style="text-transform:uppercase" /></td>
+            </tr>
+            <tr>
+                <td>Edad:</td>
+                <td>Sexo:</td>
+            </tr>
+            <tr>
+                <td><input type="number" name="edad" id="edad" /></td>
+                <td>
+                    <select name="sexo" id="sexo">
+                        <option value="FEMENINO">FEMENINO</option>
+                        <option value="MASCULINO">MASCULINO</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Ciudad:</td>
+                <td>Celular: (10 dígitos)</td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="ciudad" id="ciudad">
+                        <option value="ENSENADA">ENSENADA</option>
+                        <option value="TIJUANA">TIJUANA</option>
+                        <option value="MEXICALI">MEXICALI</option>
+                        <option value="ROSARITO">ROSARITO</option>
+                        <option value="TECATE">TECATE</option>
+                        <option value="SAN FELIPE">SAN FELIPE</option>
+                        <option value="OTRO">OTRO</option>
+                    </select>
+                </td>
+                <td><input type="tel" name="tel" id="tel" /></td>
+            </tr>
+            <tr>
+                <td>Transporte:</td>
+                <td>Comentarios:</td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="transporte" id="transporte">
+                        <option value="NO">NO</option>
+                        <option value="SI">SI</option>
+                    </select>
+                </td>
+                <td rowspan="3">
+                    <textarea name="name" rows="6" cols="22"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Camisa:</td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="camisa" id="camisa">
+                        <option value="NO">NO</option>
+                        <option value="SI">SI</option>
+                    </select>
+                </td>
+            </tr>
+            <tr id="tallaRow">
+                <td>Talla:</td>
+                <td>
+                    <select name="talla" id="talla">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="enviar" class="boton" id="enviar" value="Enviar" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
