@@ -1,0 +1,29 @@
+body
+{
+background-image: url("paisaje3.jpg");
+background-size: cover;
+}
+table
+{
+  margin: auto;
+}
+h1,h2
+{
+text-align: center;
+text-shadow: 2px 2px #00e639;
+}
+.boton
+{
+width:350px;
+
+
+}
+form
+{
+  background: #33C7FF;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: auto;
+  height: 400px;
+  width: 620px;
+}
